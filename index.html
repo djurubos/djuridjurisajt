@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miloš Đurić — Programiranje</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">MD<span>.</span></h1>
+            <ul class="navlink">
+                <li><a href="index.html" class="active">Početna</a></li>
+                <li><a href="zadaci.html">Zadaci</a></li>
+                <li><a href="pit.html">Primena</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-tag">C / C++ · C# · Programiranje</div>
+        <h1>Portfolio<br/>zadataka iz<br/><em>Programiranja</em></h1>
+        <p>Kolekcija svih zadataka koje sam radio tokom školske godine — od osnova do naprednih tema poput apstraktnih klasa, interfejsa i fajlova.</p>
+        <div class="hero-actions">
+            <a href="zadaci.html" class="btn-primary">Pogledaj zadatke →</a>
+            <a href="pit.html" class="btn-secondary">Primena (PIT)</a>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stat-card" data-index="[01]">
+            <div class="stat-num">67</div>
+            <div class="stat-label">Zadataka iz C/C++</div>
+        </div>
+        <div class="stat-card" data-index="[02]">
+            <div class="stat-num">15</div>
+            <div class="stat-label">Projekata iz Primene</div>
+        </div>
+        <div class="stat-card" data-index="[03]">
+            <div class="stat-num">8</div>
+            <div class="stat-label">Tematskih celina</div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Miloš Đurić <span>·</span> 2026</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.card').forEach((card, i) => {
+            card.style.animationDelay = (i * 35) + 'ms';
+        });
+    </script>
+</body>
+</html>
